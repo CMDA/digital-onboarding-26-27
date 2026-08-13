@@ -21,7 +21,7 @@
   box-sizing: border-box;
 }
 
-main{
+main {
   color: var(--text);
   background: var(--bg);
   margin: 2rem auto;
@@ -96,26 +96,34 @@ a {
 
 
 /* list */
-ol, dl {
+ol,
+dl {
   padding-left: 2rem;
 }
+
 ol li {
   border-bottom: 1px solid #ccc;
   line-height: 1.7;
-  padding: 1rem 2rem 0;;
+  padding: 1rem 2rem 0;
+  ;
 }
+
 dt {
   line-height: 1.7;
-  padding: 1rem 2rem 0;;
+  padding: 1rem 2rem 0;
+  ;
   font-weight: bold;
   margin-top: 1rem;
 }
+
 dd {
   line-height: 1.7;
-  padding: 1rem 2rem 0;;
+  padding: 1rem 2rem 0;
+  ;
   margin-bottom: 1rem;
   margin-left: 2rem;
 }
+
 /* marker */
 ol li::marker {
   /* padding: 2rem; */
@@ -415,7 +423,7 @@ p.exercise-info {
 
 #icon-trophy {
   background-image: url('../img/icons/trophy.png');
-} 
+}
 
 #icon-video {
   background-image: url('../img/icons/video.png');
@@ -501,7 +509,19 @@ p.exercise-info {
   }
 
   nav ul li a {
-    padding: 1.5rem 3rem 1.5rem 3rem;
+    padding: 1rem 2rem 1rem 2rem;
+  }
+
+  nav ul li a span {
+    display: inline;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    transition: 0.25s ease-in-out;
+  }
+
+  nav ul li.linked a {
+    margin:0;
+    padding:0.3rem 2rem 0.3rem 2rem;
   }
 
   /* list */
