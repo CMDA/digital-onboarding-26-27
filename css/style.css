@@ -15,14 +15,13 @@
 }
 
 /* general */
-.onboarding * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-main.onboarding {
-  font-size: 62.5%;
+main{
   color: var(--text);
   background: var(--bg);
   margin: 2rem auto;
@@ -31,56 +30,48 @@ main.onboarding {
 
 
 /* typography */
-.onboarding h1,
-.onboarding h2,
-.onboarding h3,
-.onboarding h4,
-.onboarding h5,
-.onboarding h6,
-.onboarding li,
-.onboarding dd,
-.onboarding dt,
-.onboarding p,
-.onboarding a,
-.onboarding span {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+dd,
+dt,
+p,
+a,
+span {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   color: var(--steunkleur);
 }
 
-.onboarding p,
-.onboarding a,
-.onboarding li,
-.onboarding dd,
-.onboarding dt,
-.onboarding span {
-  font-size: 1.6rem;
-}
 
-.onboarding img {
+img {
   max-width: 100%;
   height: auto;
 }
 
-.onboarding h1 {
-  font-size: 5rem;
+h1 {
+  font-size: 3rem;
 }
 
-.onboarding h2,
-.onboarding h3 {
+h2,
+h3 {
   margin: 2rem 0;
   padding: 1rem 2rem;
   border: 1px solid var(--steunkleur);
   width: fit-content;
 }
 
-.onboarding h2 {
-  font-size: 3rem;
+h2 {
+  font-size: 2.5rem;
   color: var(--steunkleur);
   background-color: var(--accentkleur);
 }
 
-.onboarding h3 {
+h3 {
   color: var(--steunkleur);
   background-color: var(--accentkleur);
   font-size: 2rem;
@@ -88,115 +79,113 @@ main.onboarding {
   line-height: 1.2;
 }
 
-.onboarding h4 {
-  font-size: 1.8rem;
+h4 {
+  font-size: 1.2rem;
   margin: 1rem 0;
   font-weight: bold;
 }
 
-.onboarding p {
+p {
   line-height: 1.5;
   margin: 1rem 0;
 }
 
-.onboarding a {
+a {
   color: var(--link);
 }
 
 
 /* list */
-.onboarding ol, .onboarding dl {
+ol, dl {
   padding-left: 2rem;
 }
-.onboarding ol li {
+ol li {
   border-bottom: 1px solid #ccc;
   line-height: 1.7;
   padding: 1rem 2rem 0;;
 }
-.onboarding dt {
+dt {
   line-height: 1.7;
   padding: 1rem 2rem 0;;
   font-weight: bold;
   margin-top: 1rem;
 }
-.onboarding dd {
+dd {
   line-height: 1.7;
   padding: 1rem 2rem 0;;
   margin-bottom: 1rem;
   margin-left: 2rem;
 }
 /* marker */
-.onboarding ol li::marker {
+ol li::marker {
   /* padding: 2rem; */
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
 
 /* navbar */
-.onboarding nav {
+nav {
   margin-top: 6rem;
 }
 
-.onboarding nav ul {
+nav ul {
   display: flex;
   list-style: none;
 }
 
-.onboarding nav ul li {
+nav ul li {
   border-top: 1px solid var(--steunkleur);
   border-right: 1px solid var(--steunkleur);
   border-bottom: 1px solid var(--steunkleur);
   flex: auto;
 }
 
-.onboarding nav ul li:first-child {
+nav ul li:first-child {
   border-left: 1px solid var(--steunkleur);
 }
 
-.onboarding nav ul li a {
+nav ul li a {
   display: block;
   text-decoration: none;
   padding: 1rem;
-  font-size: 1.6rem;
   transition: 0.25s ease-in-out;
   color: var(--steunkleur);
 }
 
-.onboarding nav ul li a span {
+nav ul li a span {
   display: block;
   padding-bottom: 1rem;
-  font-size: 1.3rem;
   transition: 0.25s ease-in-out;
 }
 
 /* hover state */
-.onboarding nav ul li.linked a:hover {
+nav ul li.linked a:hover {
   background-color: var(--steunkleur);
   color: var(--accentkleur);
 }
 
-.onboarding nav ul li.linked a:hover span {
+nav ul li.linked a:hover span {
   color: var(--accentkleur);
 }
 
 /* active state */
-.onboarding nav ul li.active a,
-.onboarding nav ul li.active span {
+nav ul li.active a,
+nav ul li.active span {
   background-color: var(--steunkleur);
   color: var(--hoofdkleur);
 }
 
-.onboarding nav ul li.active a:hover {
+nav ul li.active a:hover {
   color: var(--hoofdkleur);
 }
 
-.onboarding nav ul li.active a:hover span {
+nav ul li.active a:hover span {
   color: var(--hoofdkleur);
 }
 
 
-.onboarding .container {
+.container {
   position: relative;
   max-width: 120rem;
   margin: 0 auto;
@@ -208,26 +197,26 @@ main.onboarding {
 
 
 /* buttons */
-.onboarding .btn {
+.btn {
   display: inline-block;
   margin-top: 3rem;
   background-color: var(--steunkleur);
   color: var(--accentkleur);
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   text-decoration: none;
   padding: 1rem 2rem;
   transition: 0.5s ease-in-out;
   border-bottom: 5px solid var(--hoofdkleur);
 }
 
-.onboarding .btn:hover {
+.btn:hover {
   background-color: var(--steunkleur);
   border-color: var(--accentkleur);
   color: var(--hoofdkleur);
 }
 
 /* Next button */
-.onboarding .next-btn-container {
+.next-btn-container {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -235,7 +224,7 @@ main.onboarding {
 }
 
 /* choice btn */
-.onboarding button {
+button {
   display: inline-block;
   background-color: var(--hoofdkleur);
   border: 1px solid var(--steunkleur);
@@ -245,33 +234,33 @@ main.onboarding {
   color: var(--steunkleur);
 }
 
-.onboarding button:hover {
+button:hover {
   background-color: var(--steunkleur);
   color: var(--hoofdkleur);
 }
 
 /* row */
-.onboarding .row {
+.row {
   display: flex;
   flex-wrap: wrap;
   gap: 3rem;
 }
 
-.onboarding .row .col {
+.row .col {
   flex: 1;
 }
 
-.onboarding .row .col-2 {
+.row .col-2 {
   flex: 2;
 }
 
 /* start */
 .start h1 {
-  font-size: 7rem;
+  font-size: 4rem;
 }
 
 .start h2 {
-  font-size: 6rem;
+  font-size: 3rem;
 }
 
 .start h3 {
@@ -298,7 +287,7 @@ main.onboarding {
 }
 
 .question {
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 /* Exercise */
@@ -310,19 +299,19 @@ p.exercise-info {
 }
 
 
-.onboarding .progress {
+.progress {
   margin-bottom: 1rem;
   color: var(--muted);
 }
 
-.onboarding .choices {
+.choices {
   display: flex;
   gap: 0.75rem;
   margin: 1rem 0;
 }
 
-.onboarding .choices button,
-.onboarding .choices .btn-choice {
+.choices button,
+.choices .btn-choice {
   border: 1px solid #222;
   background: #fff;
   color: #111;
@@ -331,8 +320,8 @@ p.exercise-info {
   text-decoration: none;
 }
 
-.onboarding .choices button.is-selected,
-.onboarding .choices .btn-choice.is-selected {
+.choices button.is-selected,
+.choices .btn-choice.is-selected {
   background: #111;
   color: #fff;
 }
@@ -366,7 +355,7 @@ p.exercise-info {
   border: 1px solid var(--border);
 }
 
-.onboarding .card img {
+.card img {
   width: 100%;
   max-width: 250px;
   border: 1px solid var(--border);
@@ -378,82 +367,82 @@ p.exercise-info {
   color: var(--muted);
 }
 
-.onboarding .page-nav {
+.page-nav {
   margin-top: 1rem;
   display: flex;
   gap: 0.5rem;
   flex-wrap: wrap;
 }
 
-.onboarding .page-nav a {
+.page-nav a {
   color: var(--accent);
 }
 
-.onboarding .icon {
-  width: 6rem;
-  height: 6rem;
+.icon {
+  width: 3rem;
+  height: 3rem;
   background-size: cover;
 }
 
 /* Icons */
-.onboarding #icon-id {
+#icon-id {
   background-image: url('../img/icons/id.png');
 }
 
-.onboarding #icon-activate {
+#icon-activate {
   background-image: url('../img/icons/activate.png');
 }
 
-.onboarding #icon-loading {
+#icon-loading {
   background-image: url('../img/icons/loading.png');
 }
 
-.onboarding #icon-enter {
+#icon-enter {
   background-image: url('../img/icons/enter.png');
 }
 
-.onboarding #icon-trophy {
+#icon-trophy {
   background-image: url('../img/icons/trophy.png');
 } 
 
-.onboarding #icon-video {
+#icon-video {
   background-image: url('../img/icons/video.png');
   width: 4rem;
   height: 4rem;
 }
 
-.onboarding #icon-cat {
+#icon-cat {
   background-image: url('../img/icons/cat.png');
 }
 
-.onboarding #icon-man {
+#icon-man {
   background-image: url('../img/icons/man.png');
 }
 
-.onboarding #icon-vr {
+#icon-vr {
   background-image: url('../img/icons/vr.png');
 }
 
-.onboarding #icon-hand2 {
+#icon-hand2 {
   background-image: url('../img/icons/hand-2.png');
 }
 
-.onboarding #icon-hand {
+#icon-hand {
   background-image: url('../img/icons/hand.png');
 }
 
-.onboarding #icon-lock {
+#icon-lock {
   background-image: url('../img/icons/lock.png');
 }
 
-.onboarding #icon-octopus {
+#icon-octopus {
   background-image: url('../img/icons/octopus.png');
 }
 
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
-  .onboarding .container {
+  .container {
     margin-top: 2rem;
     margin-bottom: 5rem;
   }
@@ -482,40 +471,40 @@ p.exercise-info {
   }
 
   /* nav */
-  .onboarding .nav {
+  .nav {
     margin-top: 0;
   }
 
-  .onboarding nav ul {
+  nav ul {
     flex-direction: column;
   }
 
-  .onboarding nav ul li {
+  nav ul li {
     border-right: none;
     border-top: none;
   }
 
-  .onboarding nav ul li:first-child {
+  nav ul li:first-child {
     border-left: none;
   }
 
-  .onboarding nav ul li a {
+  nav ul li a {
     padding: 1.5rem 3rem 1.5rem 3rem;
   }
 
   /* list */
-  .onboarding .ol {
+  .ol {
     padding-left: 2rem;
   }
 
   /* row */
-  .onboarding .row .col,
-  .onboarding .row .col-2 {
+  .row .col,
+  .row .col-2 {
     flex: auto;
   }
 
   /* video container */
-  .onboarding .title-section {
+  .title-section {
     flex-direction: column;
   }
 
