@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checklist 1/9 - Account</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="title-section">
+        <h1>Digital Onboarding opdracht</h1>
+      </section>
+      <nav id="nav">
+        <ul>
+          <li class="linked">
+            <a href="./page1-account.html"
+              ><span>Opdracht 1:</span>HvA Account</a
+            >
+          </li>
+          <li class="active">
+            <a href="./page2-wifi.html"><span>Opdracht 2:</span>Wifi</a>
+          </li>
+          <li class="linked">
+            <a href="./page3-dlo.html"><span>Opdracht 3:</span>DLO</a>
+          </li>
+          <li class="linked">
+            <a href="./page4-vakken.html"><span>Opdracht 4:</span>Vakken</a>
+          </li>
+          <li class="linked">
+            <a href="./page5-teams.html"><span>Opdracht 5:</span>MS Teams</a>
+          </li>
+          <li class="linked">
+            <a href="./page6-rooster.html"><span>Opdracht 6:</span>Rooster</a>
+          </li>
+          <li class="linked">
+            <a href="./page7-sis.html"><span>Opdracht 7:</span>SIS</a>
+          </li>
+          <li class="linked">
+            <a href="./page8-mijnhva.html"><span>Opdracht 8:</span>mijnHva</a>
+          </li>
+          <li class="linked">
+            <a href="./page9-inleveren.html"
+              ><span>Opdracht 9:</span>Inleveren</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- <section class="title-section"> -->
+      <h2>Wifi</h2>
+      <!-- </section> -->
+      <p class="exercise-info">
+        Eduroam is het beveiligde wifi-netwerk van HvA. Zo ben je altijd
+        verzekerd van een veilige verbinding op de HvA, maar ook op andere
+        instellingen die eduroam aanbieden
+      </p>
+
+      <section class="question-block" data-checklist-question>
+        <section class="question-section">
+          <h4 class="question">
+            Beschikt je laptop al over een wifi internet verbinding via eduroam?
+          </h4>
+          <div id="icon-hand2" class="icon"></div>
+        </section>
+
+        <div class="choices">
+          <button type="button" data-choice="yes" class="yes-btn">Ja</button>
+          <button type="button" data-choice="no" class="no-btn">Nee</button>
+        </div>
+
+        <div class="help" data-role="help">
+          <ol>
+            <li>
+              Controleer of je internetverbinding hebt via je eigen netwerk thuis of via een hotspot. Vraag eventueel hulp aan een klasgenoot.
+            </li>
+            <li>
+              Ga naar <a href="http://wifiportal.hva.nl/" target="_blank">wifiportal.hva.nl</a>
+              en controleer je besturingssysteem.
+            </li>
+            <li>Volg de stappen</li>
+            <li>Accepteer eventuele beveiligingsmeldingen.</li>
+            <li>
+              Voer je HvA-ID@hva.nl (let op: dit is niet je e-mailadres) en je wachtwoord (soms wel twee keer achter elkaar) in.
+            </li>
+          </ol>
+        </div>
+
+        <div class="complete" data-role="complete">
+          <p>Top, je hebt nu wifi op je laptop.</p>
+        </div>
+      </section>
+
+      <section class="card question-block" data-checklist-question>
+        <section class="question-section">
+          <h4 class="question">
+            Heeft je telefoon al wifi via eduroam van de HvA? Zo niet, volg dan
+            onderstaande stappen eventueel opnieuw.
+          </h4>
+          <div id="icon-activate" class="icon"></div>
+        </section>
+        <div class="choices">
+          <button type="button" data-choice="yes" class="yes-btn trigger-confetti">Ja</button>
+          <button type="button" data-choice="yes" class="no-btn trigger-confetti">Vind ik (nu) niet nodig</button>
+          <button type="button" data-choice="no" class="no-btn">Nee</button>
+        </div>
+
+        <div class="help" data-role="help">
+                <ol>
+                    <li>
+                        Controleer of je telefoon internetverbinding heeft via je mobiele netwerk (4G/5G) of doe deze stap thuis op je eigen wifi. 
+                    </li>
+                    <li>
+                        Ga naar
+                        <a href="http://wifiportal.hva.nl/" target="_blank">wifiportal.hva.nl</a>
+                        en controleer je besturingssysteem.
+                    </li>
+                    <li>Volg de stappen</li>
+                    <li>Accepteer eventuele beveiligingsmeldingen.</li>
+                    <li>
+                        Voer je HvA-ID@hva.nl (let op: dit is niet je e-mailadres)
+                        en je wachtwoord (soms wel twee keer achter elkaar) in.
+                    </li>
+                </ol>
+        </div>
+
+        <div class="complete" data-role="complete">
+          <p>Top, deze stap is ook voltooid.</p>
+          <div class="next-btn-container">
+            <a class="btn" href="./page3-dlo.html"
+              >Good job, ga naar stap 3</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.11.0/tsparticles.confetti.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

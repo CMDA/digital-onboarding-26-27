@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checklist 1/9 - Account</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main class="onboarding">
+      <section class="title-section">
+        <h1>Digital Onboarding opdracht</h1>
+      </section>
+      <nav id="nav">
+        <ul>
+          <li class="active">
+            <a href="./page1-account.html"
+              ><span>Opdracht 1:</span>HvA Account</a
+            >
+          </li>
+          <li class="linked">
+            <a href="./page2-wifi.html"><span>Opdracht 2:</span>Wifi</a>
+          </li>
+          <li class="linked">
+            <a href="./page3-dlo.html"><span>Opdracht 3:</span>DLO</a>
+          </li>
+          <li class="linked">
+            <a href="./page4-vakken.html"><span>Opdracht 4:</span>Vakken</a>
+          </li>
+          <li class="linked">
+            <a href="./page5-teams.html"><span>Opdracht 5:</span>MS Teams</a>
+          </li>
+          <li class="linked">
+            <a href="./page6-rooster.html"><span>Opdracht 6:</span>Rooster</a>
+          </li>
+          <li class="linked">
+            <a href="./page7-sis.html"><span>Opdracht 7:</span>SIS</a>
+          </li>
+          <li class="linked">
+            <a href="./page8-mijnhva.html"><span>Opdracht 8:</span>mijnHva</a>
+          </li>
+          <li class="linked">
+            <a href="./page9-inleveren.html"
+              ><span>Opdracht 9:</span>Inleveren</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- <section class="title-section"> -->
+      <h2>HvA Account</h2>
+      <!-- </section> -->
+      <p class="exercise-info">
+        Om in te loggen op de HvA heb je je HvA-ID nodig, die je eerst moet
+        activeren. Verder moet je tweestapsverificatie instellen met behulp van
+        de Microsoft Authenticator app op je telefoon.
+      </p>
+
+      <!-- HVA ID-->
+      <section class="question-block" data-checklist-question>
+        <section class="question-section">
+          <h4 class="question">Heb jij al een HvA ID?</h4>
+          <div id="icon-id" class="icon"></div>
+        </section>
+        <p>
+          Je HvA-ID is je gebruikersnaam waarmee je inlogt op ICT-voorzieningen
+          van HvA, zoals je digitale leeromgeving (DLO), je e-mail, je rooster,
+          het instellen van de wifi etc. Je HvA-ID is een combinatie van je
+          achternaam en voorletters, soms aangevuld met een nummer. Verwar het
+          niet met je studentnummer (50xxxxx) of HvA-e-mailadres
+          (roepnaam.tussenvoegsels.achternaam@hva.nl).
+        </p>
+        <div class="choices">
+          <button type="button" data-choice="yes" class="yes-btn">Ja</button>
+          <button type="button" data-choice="no" class="no-btn">Nee</button>
+        </div>
+
+        <div class="help" data-role="help">
+          <p>
+            Check eerst jouw persoonlijke e-mail. Als het goed is, heb je een
+            e-mail ontvangen met je studentnummer. Daarin vind je je HvA-ID. Kun
+            je je HvA-ID nog niet vinden? E-mail de ICTS Servicedesk of bel 020
+            595 1402 (op werkdagen van 8.00 – 18.00 uur).
+          </p>
+        </div>
+
+        <div class="complete" data-role="complete">
+          <p>Top, je hebt een HvA ID.</p>
+        </div>
+      </section>
+
+      <!-- HVA ID geactiveerd -->
+      <section class="card question-block" data-checklist-question>
+        <section class="question-section">
+          <h4 class="question">Heb je je HvA account geactiveerd?</h4>
+          <div id="icon-activate" class="icon"></div>
+        </section>
+        <div class="choices">
+          <button type="button" data-choice="yes" class="yes-btn">Ja</button>
+          <button type="button" data-choice="no" class="no-btn">Nee</button>
+        </div>
+
+        <div class="help" data-role="help">
+          <p>
+            <strong>Volg onderstaande stappen om je HvA-ID te activeren</strong>
+          </p>
+          <ol>
+            <li>
+              Ga naar
+              <a href="https://id.hva.nl/" target="_blank">id.hva.nl</a>.
+            </li>
+            <li>Kies voor ‘Ik wil mijn HvA-ID (her)activeren’.</li>
+            <li>Volg de stappen op het scherm.</li>
+            <li>
+              Wordt er gevraagd om je privé-mailadres? Gebruik dan het adres
+              waarmee je bent geregistreerd in Studielink.
+            </li>
+            <li>Het duurt circa 10 tot 20 minuten voordat je ID actief is.</li>
+          </ol>
+        </div>
+
+        <div class="complete" data-role="complete">
+          <p>Top, je account is geactiveerd.</p>
+        </div>
+      </section>
+
+      <section class="card question-block" data-checklist-question>
+        <section class="question-section">
+          <h4 class="question">
+            Heb je Microsoft Authenticator (MFA) ingesteld?
+          </h4>
+          <div id="icon-lock" class="icon"></div>
+        </section>
+        <p>
+          Tweestapsverificatie is een extra beveiligingslaag voor je
+          HvA-account. Je logt in met je HvA-ID én een bevestiging via de
+          Microsoft Authenticator-app op je smartphone. Zonder
+          tweestapsverificatie heb je geen toegang tot HvA-systemen zoals
+          Brightspace (DLO) of je e-mail.
+        </p>
+
+        <div class="choices">
+          <button type="button" data-choice="yes" class="yes-btn trigger-confetti">Ja</button>
+          <button type="button" data-choice="no" class="no-btn">Nee</button>
+        </div>
+
+        <div class="help" data-role="help">
+          <p>
+            <strong
+              >Volg onderstaande stappen om tweestapsverificatie in te
+              stellen</strong
+            >
+          </p>
+          <br />
+          <ol>
+            <li>
+              Ga naar
+              <a
+                href="https://www.hva.nl/praktische-zaken/tweestapsverificatie/microsoft-authenticator"
+                target="_blank"
+                >https://www.hva.nl/praktische-zaken/tweestapsverificatie/microsoft-authenticator</a
+              >.
+            </li>
+            <li>Volg de stappen op het scherm.</li>
+            <li>
+              Zonder tweestapsverificatie heb je geen toegang tot HvA-systemen
+              zoals Brightspace (DLO) of je e-mail, dus doe dit zo snel
+              mogelijk.
+            </li>
+          </ol>
+        </div>
+
+        <div class="complete" data-role="complete">
+          <p>Top, MFA staat aan. </p>
+          <div class="next-btn-container">
+              <a class="btn" href="./page2-wifi.html">Good job, ga naar stap 2</a>
+            </div>
+        </div>
+      </section>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.11.0/tsparticles.confetti.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checklist 9/9 - Afronding</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <main>
+    <h1>Software Checklist</h1>
+    <p class="progress">Stap 9 van 9 - Update & backup</p>
+
+    <section class="card">
+      <h2>Heb je updates uitgevoerd en een eerste backup gemaakt?</h2>
+      <div class="choices">
+        <button id="yes-btn" type="button">Ja, klaar</button>
+        <button id="no-btn" type="button">Nee, nog niet</button>
+      </div>
+
+      <div id="help-block" class="help">
+        <p>Installeer de laatste OS-updates, herstart je laptop en maak daarna een backup van je studie-map in OneDrive.</p>
+        <img src="../onboarding_cmd_26_27/img/screenshots/office.jpg" alt="OneDrive backup" />
+        <img src="../onboarding_cmd_26_27/img/screenshots/inleveren.jpg" alt="Bestanden controleren" />
+      </div>
+
+      <div id="complete-block" class="complete">
+        <p>Checklist afgerond. Klik op de knop om je onboarding met confetti af te sluiten.</p>
+        <button class="trigger-confetti" type="button">Alles voltooid</button>
+        <p class="notice">Je kunt hierna de pagina sluiten of teruggaan naar stap 1.</p>
+      </div>
+    </section>
+
+    <nav class="page-nav">
+      <a href="./page8-browser.html">Vorige stap</a>
+      <a href="./page1-account.html">Terug naar stap 1</a>
+    </nav>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.11.0/tsparticles.confetti.bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>

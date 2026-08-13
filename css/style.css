@@ -1,0 +1,522 @@
+/* colors */
+:root {
+  --black: #000000;
+  --grey: #dbdbdb;
+  --white: #ffffff;
+
+  --text: #000;
+  --muted: #666;
+  --border: #ddd;
+  --bg: #fff;
+  --hoofdkleur: #ffffff;
+  --steunkleur: #000000;
+  --accentkleur: #FFED41;
+  --link: #00a1ff;
+}
+
+/* general */
+.onboarding * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main.onboarding {
+  font-size: 62.5%;
+  color: var(--text);
+  background: var(--bg);
+  margin: 2rem auto;
+  padding: 0 1rem 2rem;
+}
+
+
+/* typography */
+.onboarding h1,
+.onboarding h2,
+.onboarding h3,
+.onboarding h4,
+.onboarding h5,
+.onboarding h6,
+.onboarding li,
+.onboarding dd,
+.onboarding dt,
+.onboarding p,
+.onboarding a,
+.onboarding span {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: var(--steunkleur);
+}
+
+.onboarding p,
+.onboarding a,
+.onboarding li,
+.onboarding dd,
+.onboarding dt,
+.onboarding span {
+  font-size: 1.6rem;
+}
+
+.onboarding img {
+  max-width: 100%;
+  height: auto;
+}
+
+.onboarding h1 {
+  font-size: 5rem;
+}
+
+.onboarding h2,
+.onboarding h3 {
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+  border: 1px solid var(--steunkleur);
+  width: fit-content;
+}
+
+.onboarding h2 {
+  font-size: 3rem;
+  color: var(--steunkleur);
+  background-color: var(--accentkleur);
+}
+
+.onboarding h3 {
+  color: var(--steunkleur);
+  background-color: var(--accentkleur);
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.onboarding h4 {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+.onboarding p {
+  line-height: 1.5;
+  margin: 1rem 0;
+}
+
+.onboarding a {
+  color: var(--link);
+}
+
+
+/* list */
+.onboarding ol, .onboarding dl {
+  padding-left: 2rem;
+}
+.onboarding ol li {
+  border-bottom: 1px solid #ccc;
+  line-height: 1.7;
+  padding: 1rem 2rem 0;;
+}
+.onboarding dt {
+  line-height: 1.7;
+  padding: 1rem 2rem 0;;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.onboarding dd {
+  line-height: 1.7;
+  padding: 1rem 2rem 0;;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+}
+/* marker */
+.onboarding ol li::marker {
+  /* padding: 2rem; */
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+
+/* navbar */
+.onboarding nav {
+  margin-top: 6rem;
+}
+
+.onboarding nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.onboarding nav ul li {
+  border-top: 1px solid var(--steunkleur);
+  border-right: 1px solid var(--steunkleur);
+  border-bottom: 1px solid var(--steunkleur);
+  flex: auto;
+}
+
+.onboarding nav ul li:first-child {
+  border-left: 1px solid var(--steunkleur);
+}
+
+.onboarding nav ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 1.6rem;
+  transition: 0.25s ease-in-out;
+  color: var(--steunkleur);
+}
+
+.onboarding nav ul li a span {
+  display: block;
+  padding-bottom: 1rem;
+  font-size: 1.3rem;
+  transition: 0.25s ease-in-out;
+}
+
+/* hover state */
+.onboarding nav ul li.linked a:hover {
+  background-color: var(--steunkleur);
+  color: var(--accentkleur);
+}
+
+.onboarding nav ul li.linked a:hover span {
+  color: var(--accentkleur);
+}
+
+/* active state */
+.onboarding nav ul li.active a,
+.onboarding nav ul li.active span {
+  background-color: var(--steunkleur);
+  color: var(--hoofdkleur);
+}
+
+.onboarding nav ul li.active a:hover {
+  color: var(--hoofdkleur);
+}
+
+.onboarding nav ul li.active a:hover span {
+  color: var(--hoofdkleur);
+}
+
+
+.onboarding .container {
+  position: relative;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+
+
+/* buttons */
+.onboarding .btn {
+  display: inline-block;
+  margin-top: 3rem;
+  background-color: var(--steunkleur);
+  color: var(--accentkleur);
+  font-size: 1.8rem;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  transition: 0.5s ease-in-out;
+  border-bottom: 5px solid var(--hoofdkleur);
+}
+
+.onboarding .btn:hover {
+  background-color: var(--steunkleur);
+  border-color: var(--accentkleur);
+  color: var(--hoofdkleur);
+}
+
+/* Next button */
+.onboarding .next-btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0;
+}
+
+/* choice btn */
+.onboarding button {
+  display: inline-block;
+  background-color: var(--hoofdkleur);
+  border: 1px solid var(--steunkleur);
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+  color: var(--steunkleur);
+}
+
+.onboarding button:hover {
+  background-color: var(--steunkleur);
+  color: var(--hoofdkleur);
+}
+
+/* row */
+.onboarding .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.onboarding .row .col {
+  flex: 1;
+}
+
+.onboarding .row .col-2 {
+  flex: 2;
+}
+
+/* start */
+.start h1 {
+  font-size: 7rem;
+}
+
+.start h2 {
+  font-size: 6rem;
+}
+
+.start h3 {
+  margin-bottom: 2rem;
+}
+
+.start .info {
+  display: flex;
+  gap: 3rem;
+}
+
+/* Q&A */
+.question-block {
+  max-width: 750px;
+  margin: auto;
+}
+
+.question-section {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.question {
+  font-size: 2rem;
+}
+
+/* Exercise */
+p.exercise-info {
+  margin: 3rem 0 0 0;
+  border-bottom: solid 0.5px #b3b3b3;
+  padding-bottom: 4rem;
+  max-width: 50em;
+}
+
+
+.onboarding .progress {
+  margin-bottom: 1rem;
+  color: var(--muted);
+}
+
+.onboarding .choices {
+  display: flex;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+.onboarding .choices button,
+.onboarding .choices .btn-choice {
+  border: 1px solid #222;
+  background: #fff;
+  color: #111;
+  padding: 0.6rem 0.9rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.onboarding .choices button.is-selected,
+.onboarding .choices .btn-choice.is-selected {
+  background: #111;
+  color: #fff;
+}
+
+
+.help,
+.complete {
+  display: none;
+  margin-top: 1rem;
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+}
+
+.help {
+  background-color: var(--grey);
+  padding: 1rem;
+  margin-left: 4rem;
+}
+
+.instructions {
+  background-color: var(--grey);
+  margin-top: 1rem;
+  padding: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.follow-up {
+  display: none;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--border);
+}
+
+.onboarding .card img {
+  width: 100%;
+  max-width: 250px;
+  border: 1px solid var(--border);
+  margin: 0.5rem 0;
+}
+
+.notice {
+  margin-top: 0.75rem;
+  color: var(--muted);
+}
+
+.onboarding .page-nav {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.onboarding .page-nav a {
+  color: var(--accent);
+}
+
+.onboarding .icon {
+  width: 6rem;
+  height: 6rem;
+  background-size: cover;
+}
+
+/* Icons */
+.onboarding #icon-id {
+  background-image: url('../img/icons/id.png');
+}
+
+.onboarding #icon-activate {
+  background-image: url('../img/icons/activate.png');
+}
+
+.onboarding #icon-loading {
+  background-image: url('../img/icons/loading.png');
+}
+
+.onboarding #icon-enter {
+  background-image: url('../img/icons/enter.png');
+}
+
+.onboarding #icon-trophy {
+  background-image: url('../img/icons/trophy.png');
+} 
+
+.onboarding #icon-video {
+  background-image: url('../img/icons/video.png');
+  width: 4rem;
+  height: 4rem;
+}
+
+.onboarding #icon-cat {
+  background-image: url('../img/icons/cat.png');
+}
+
+.onboarding #icon-man {
+  background-image: url('../img/icons/man.png');
+}
+
+.onboarding #icon-vr {
+  background-image: url('../img/icons/vr.png');
+}
+
+.onboarding #icon-hand2 {
+  background-image: url('../img/icons/hand-2.png');
+}
+
+.onboarding #icon-hand {
+  background-image: url('../img/icons/hand.png');
+}
+
+.onboarding #icon-lock {
+  background-image: url('../img/icons/lock.png');
+}
+
+.onboarding #icon-octopus {
+  background-image: url('../img/icons/octopus.png');
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .onboarding .container {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+  }
+
+  /* headings */
+  .start h1,
+  h1 {
+    font-size: 3rem;
+  }
+
+  .start h2 {
+    font-size: 2.5rem;
+  }
+
+  .start h3 {
+    font-size: 2rem;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+
+  /* width */
+  .w-50 {
+    max-width: 100%;
+  }
+
+  /* nav */
+  .onboarding .nav {
+    margin-top: 0;
+  }
+
+  .onboarding nav ul {
+    flex-direction: column;
+  }
+
+  .onboarding nav ul li {
+    border-right: none;
+    border-top: none;
+  }
+
+  .onboarding nav ul li:first-child {
+    border-left: none;
+  }
+
+  .onboarding nav ul li a {
+    padding: 1.5rem 3rem 1.5rem 3rem;
+  }
+
+  /* list */
+  .onboarding .ol {
+    padding-left: 2rem;
+  }
+
+  /* row */
+  .onboarding .row .col,
+  .onboarding .row .col-2 {
+    flex: auto;
+  }
+
+  /* video container */
+  .onboarding .title-section {
+    flex-direction: column;
+  }
+
+}
