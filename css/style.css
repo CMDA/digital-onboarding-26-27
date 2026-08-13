@@ -257,14 +257,26 @@ button:hover {
 /* start */
 .start h1 {
   font-size: 4rem;
+  padding: 1rem 2rem;
+  border: 1px solid var(--steunkleur);
+  width: fit-content;
+
 }
 
 .start h2 {
+  padding: 1rem 2rem;
+  margin: 0;
+  background-color: var(--steunkleur);
+  color: var(--hoofdkleur);
+  width: fit-content;
   font-size: 3rem;
 }
 
 .start h3 {
   margin-bottom: 2rem;
+  background-color: var(--hoofdkleur);
+  border: none;
+  padding: 0;
 }
 
 .start .info {
